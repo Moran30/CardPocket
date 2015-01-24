@@ -14,8 +14,22 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+            <intent-filter >
+                <action android:name="com.cardpocket.cardpocket.login" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".signup"
+            android:label="@string/title_activity_signup" >
+            <intent-filter >
+                <action android:name="com.cardpocket.cardpocket.signup" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
