@@ -4,32 +4,98 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/logomain_full"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".login"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
-            <intent-filter >
+            <intent-filter>
                 <action android:name="com.cardpocket.cardpocket.login" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".signup"
-            android:label="@string/title_activity_signup" >
-            <intent-filter >
+            android:label="@string/title_activity_signup"
+            android:screenOrientation="portrait" >
+            <intent-filter>
                 <action android:name="com.cardpocket.cardpocket.signup" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".about"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cardpocket.cardpocket.about" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainactivity"
+            android:label="@string/title_activity_mainactivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cardpocket.cardpocket.mainactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".card"
+            android:label="@string/title_activity_card"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cardpocket.cardpocket.card" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viewcard"
+            android:label="@string/title_activity_viewcard"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.encode.EncodeActivity"
+            android:label="com.google.zxing.client.android.encode.EncodeActivity" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setting"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cardpocket.cardpocket.setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forgottenpassword"
+            android:label="@string/title_activity_forgottenpassword"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.cardpocket.cardpocket.forgot" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
